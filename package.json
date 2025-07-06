@@ -1,20 +1,41 @@
 {
   "name": "postcss-focus-visible-within",
   "version": "1.0.0",
-  "description": "",
-  "main": "./dist/index.js",
-  "types": "./dist/index.d.ts",
+  "description": "PostCSS plugin to add the :focus-visible-within pseudoselector",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "default": "./dist/index.js"
+    }
+  },
+  "type": "module",
+  "license": "ISC",
+  "homepage": "https://github.com/davidwarrington/postcss-focus-visible-within",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/davidwarrington/postcss-focus-visible-within.git"
+  },
+  "bugs": {
+    "url": "https://github.com/davidwarrington/postcss-focus-visible-within/issues"
+  },
+  "keywords": [
+    "postcss",
+    "css",
+    "postcss-plugin",
+    "postcss-focus-visible-within"
+  ],
+  "files": [
+    "dist/*"
+  ],
+  "packageManager": "pnpm@10.12.1",
   "scripts": {
     "build": "tsdown",
     "lint": "eslint .",
     "format": "prettier --write .",
-    "test": "vitest"
+    "prepublishOnly": "pnpm build",
+    "test": "vitest",
+    "typecheck": "tsc"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "packageManager": "pnpm@10.12.1",
-  "type": "module",
   "dependencies": {
     "postcss-selector-parser": "^7.1.0"
   },
