@@ -1,6 +1,6 @@
 {
   "name": "postcss-focus-visible-within",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "PostCSS plugin to add the :focus-visible-within pseudoselector",
   "exports": {
     ".": {
