@@ -1,0 +1,24 @@
+{
+  "name": "postcss-focus-visible-within",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "lint": "eslint .",
+    "format": "prettier --write .",
+    "test": "vitest"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "packageManager": "pnpm@10.12.1",
+  "type": "module",
+  "devDependencies": {
+    "@davidwarrington/eslint-config": "^2.3.2",
+    "@davidwarrington/prettier-config": "^2.2.3",
+    "eslint": "^9.30.1",
+    "prettier": "^3.6.2",
+    "tsdown": "^0.12.9",
+    "vitest": "^3.2.4"
+  }
+}
