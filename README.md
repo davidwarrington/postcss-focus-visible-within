@@ -36,7 +36,7 @@ export default {
 
 ## Alternatives
 
-You might prefer to use a custom snippet. Here's an example for VSCode/VSCode based browsers. Add it to `.vscode/css.code-snippets` in your project, or if you'd like to use it globally, add it to `~/Library/Application Support/Code/User/snippets/css.json`.
+You might prefer to use a custom snippet. Here's an example for VSCode/VSCode based editors. Add it to `.vscode/css.code-snippets` in your project, or if you'd like to use it globally, add it to `~/Library/Application Support/Code/User/snippets/css.json`.
 
 ```jsonc
 {
