@@ -1,5 +1,5 @@
 import type { Plugin } from 'postcss';
-import selectorParser, { pseudo } from 'postcss-selector-parser';
+import selectorParser from 'postcss-selector-parser';
 
 const PSEUDO = ':focus-visible-within';
 const REPLACEMENT = ':has(:focus-visible)';
@@ -19,7 +19,7 @@ export default function postcssFocusVisibleWithin(): Plugin {
             return;
           }
 
-          node.replaceWith(pseudo({ value: REPLACEMENT }));
+          node.replaceWith(selectorParser.pseudo({ value: REPLACEMENT }));
         });
       }).transformSync(rule, {
         lossless: true,
@@ -28,3 +28,5 @@ export default function postcssFocusVisibleWithin(): Plugin {
     },
   };
 }
+
+postcssFocusVisibleWithin.postcss = true;
