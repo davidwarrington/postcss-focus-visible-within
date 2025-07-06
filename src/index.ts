@@ -28,3 +28,5 @@ export default function postcssFocusVisibleWithin(): Plugin {
     },
   };
 }
+
+postcssFocusVisibleWithin.postcss = true;
